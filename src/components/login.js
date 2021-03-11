@@ -2,13 +2,9 @@ import React from 'react'
 import { Avatar, Button, Checkbox, FormControlLabel, Grid, Paper, TextField, Typography } from '@material-ui/core'
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import{Link} from 'react-router-dom';
-// import {Redirect} from 'react-router-dom';
-// import { useHistory } from "react-router-dom";
 
-//import FormControlLabel from '@material-ui/core/FormControlLabel';
-//import Checkbox from '@material-ui/core/Checkbox';
 
-// class Login extends React.component
+
 const Login=({handleChange})=>{
 
 
@@ -16,19 +12,7 @@ const Login=({handleChange})=>{
     const avatarStyle = {backgroundColor:'#1bbd7e'}
     const btnstyle={margin:'8px 0'}
     const afterbtnstyle={margin:'5px 0'}
-    // function HomeButton() {
-    //   const history = useHistory();
     
-    //   function handleClick() {
-    //     history.push("/dashboard");
-    //   }
- 
-    // function App(props) {
-    //   const onClick = () => {
-    //     console.log(props.history);
-    //     props.history.push("/dashboard");
-    //   }
-
     return (
       <Grid>
         <Paper style={paperStyle}>
@@ -56,8 +40,7 @@ const Login=({handleChange})=>{
             control={<Checkbox name="checkedB" color="primary" />}
             label="Remember me"
           />
-          {/* <Router path = "./dashboard.js" component = {Dashboard}>  */}
-          {/* <Link path = "./dashboard.js" component = {Dashboard}> */}
+         
 
          <Link to="/dashboard">
             <Button
@@ -65,12 +48,12 @@ const Login=({handleChange})=>{
               variant="contained"
               style={btnstyle}
               fullWidth 
-              // onClick={onClick}
+             
             >
               Sign In
             </Button>
             </Link>
-            {/* <Route path="/about" component={Dashboard} /> */}
+          
 
           <Typography style={afterbtnstyle}>
             <Link href="#">Forget Password ?</Link>

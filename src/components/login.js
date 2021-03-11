@@ -1,8 +1,7 @@
 import React from 'react'
-import { Avatar, Button, Checkbox, FormControlLabel, Grid, Link, Paper, TextField, Typography } from '@material-ui/core'
+import { Avatar, Button, Checkbox, FormControlLabel, Grid, Paper, TextField, Typography } from '@material-ui/core'
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-import { Route, BrowserRouter, withRouter } from "react-router-dom";
-import Dashboard from './dashboard';
+import{Link} from 'react-router-dom';
 // import {Redirect} from 'react-router-dom';
 // import { useHistory } from "react-router-dom";
 
@@ -60,7 +59,7 @@ const Login=({handleChange})=>{
           {/* <Router path = "./dashboard.js" component = {Dashboard}>  */}
           {/* <Link path = "./dashboard.js" component = {Dashboard}> */}
 
-         <a href="/dashboard">
+         <Link to="/dashboard">
             <Button
               color="primary"
               variant="contained"
@@ -70,7 +69,7 @@ const Login=({handleChange})=>{
             >
               Sign In
             </Button>
-            </a>
+            </Link>
             {/* <Route path="/about" component={Dashboard} /> */}
 
           <Typography style={afterbtnstyle}>

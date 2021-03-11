@@ -14,6 +14,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
 import Checkbox from "@material-ui/core/Checkbox";
+import {Link} from 'react-router-dom';
 
 const Signup = () => {
   const paperStyle = { padding: 20, width: 300, margin: "0 auto" };
@@ -69,10 +70,11 @@ const Signup = () => {
             control={<Checkbox name="checkedA" />}
             label="I accept the terms and conditions."
           />
+          <Link to="/dashboard">
           <Button type="submit" variant="contained" color="primary">
             Sign up
           </Button>
-
+          </Link>
           {/* <Link to="/dashboard" className="btn btn-primary">Sign up</Link> */}
 
         </form>
